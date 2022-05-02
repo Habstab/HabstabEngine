@@ -6,18 +6,6 @@ class Object{
         this.w = w;
         this.h = h;
     }
-    AnimY(a1, a2){
-        anime({
-            targets: a1,
-            translateY: a2
-        })
-    }
-    AnimX(a1, a2){
-        anime({
-            targets: a1,
-            translateX: a2
-        })
-    }
     MoveX(n1){
         this.x += n1
     }
