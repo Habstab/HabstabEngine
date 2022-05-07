@@ -138,3 +138,101 @@ function StopGame(){
 let FPS = 24;
 const Game = setInterval(Update,FPS)
 //End
+
+/*
+Update V1.0.2:
+Changing of ID
+Setting of background in JS
+
+# HabstabEngine
+A Javascript Game Engine Created By Me
+
+So, yeah i made a js libary not so suprising.
+
+Anyways..
+Part 1(The Basics): 
+
+HTML:
+<body>
+  <div id="player"></div>
+</body>
+
+CSS:
+#player{
+background-color:red
+}
+
+JS:
+player = document.getElementById('player') 
+Rect = new Obj(0,0,100,100,'red') //Cretes an 'Object' with x is 0 y is 0 width is 100 height is 100 and background is red(Will be used later)
+
+
+function Update() {
+    Setup(player,Rect) //Shows a red square
+}
+
+//You should see a red square appear
+
+Anyways... You might wonder what the 'red' was used for in the Rect = new Obj(0,0,100,100,'red')
+it is used to set the background color to red without styling or CSS
+
+Part 2(IDK):
+Instead of using:
+
+CSS:
+#player{
+background-color:red
+}
+
+JS:
+player = document.getElementById('player') 
+Rect = new Obj(0,0,100,100,'red') //Cretes an 'Object' with x is 0 y is 0 width is 100 height is 100 and background is red(Will be used later)
+
+
+function Update() {
+    Setup(player,Rect) //Shows a red square
+}
+
+You can use:
+JS:
+player = document.getElementById('player')
+Rect = new Obj(0,0,100,100,'red')
+
+
+function Update() { 
+    Setup(player,Rect) //Sets up the Object
+    SetupBg(player,Rect) //Sets up the background
+}
+
+ //You should also see a red square qppear
+ 
+ Part 3(HELP MEEEEEEEEE):
+ You can also change the x and y position of the object by writing:
+ 
+JS:
+player = document.getElementById('player')
+Rect = new Obj(0,0,100,100,'red')
+
+
+function Update() {
+    Setup(player,Rect)
+    SetupBg(player,Rect)
+    Rect.MoveX(1) //Moves the x of the object by 1
+}
+
+//Or
+
+JS:
+player = document.getElementById('player')
+Rect = new Obj(0,0,100,100,'red')
+
+
+function Update() {
+    Setup(player,Rect)
+    SetupBg(player,Rect)
+    Rect.MoveY(1) //Moves the y of the object by 1
+}
+*/
+ 
+
+
